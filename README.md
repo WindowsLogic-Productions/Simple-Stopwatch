@@ -5,7 +5,7 @@ The goal is to create a functional stopwatch which is feature-rich and lightweig
 
 # Download
 
-Download the latest version of Amino for Desktop on the [Releases](https://github.com/windowslogic/simple-stopwatch/releases) page.
+Download the latest version of Simple Stopwatch on the [Releases](https://github.com/windowslogic/simple-stopwatch/releases) page.
 
 # Support & Feedback
 
