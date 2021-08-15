@@ -26,12 +26,4 @@
     Private Sub Button3_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LapButton.Click
         ListBox1.Items.Add(Label1.Text)
     End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles EnlargeButton.Click
-        Enlarged.Show()
-        Enlarged.Label1.Text = Label1.Text
-        Enlarged.Timer1.Start()
-        Enlarged.StartButton.Text = "Stop"
-        Me.Close()
-    End Sub
 End Class

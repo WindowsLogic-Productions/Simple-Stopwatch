@@ -29,12 +29,23 @@ Partial Class Main
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.EnlargeButton = New System.Windows.Forms.Button()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.StopwatchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.StartToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.StopToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LapToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ResetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'StartButton
         '
-        Me.StartButton.Location = New System.Drawing.Point(40, 54)
+        Me.StartButton.Location = New System.Drawing.Point(25, 159)
         Me.StartButton.Name = "StartButton"
         Me.StartButton.Size = New System.Drawing.Size(156, 23)
         Me.StartButton.TabIndex = 0
@@ -43,7 +54,7 @@ Partial Class Main
         '
         'ResetButton
         '
-        Me.ResetButton.Location = New System.Drawing.Point(121, 83)
+        Me.ResetButton.Location = New System.Drawing.Point(106, 188)
         Me.ResetButton.Name = "ResetButton"
         Me.ResetButton.Size = New System.Drawing.Size(75, 23)
         Me.ResetButton.TabIndex = 2
@@ -52,7 +63,7 @@ Partial Class Main
         '
         'LapButton
         '
-        Me.LapButton.Location = New System.Drawing.Point(40, 83)
+        Me.LapButton.Location = New System.Drawing.Point(25, 188)
         Me.LapButton.Name = "LapButton"
         Me.LapButton.Size = New System.Drawing.Size(75, 23)
         Me.LapButton.TabIndex = 3
@@ -62,10 +73,10 @@ Partial Class Main
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(49, 15)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(10, 50)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(138, 25)
+        Me.Label1.Size = New System.Drawing.Size(183, 33)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "00:00:00:000"
         '
@@ -76,35 +87,105 @@ Partial Class Main
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(12, 114)
+        Me.ListBox1.Location = New System.Drawing.Point(202, 50)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(212, 147)
+        Me.ListBox1.Size = New System.Drawing.Size(199, 186)
         Me.ListBox1.TabIndex = 5
         '
-        'EnlargeButton
+        'MenuStrip1
         '
-        Me.EnlargeButton.Location = New System.Drawing.Point(149, 264)
-        Me.EnlargeButton.Name = "EnlargeButton"
-        Me.EnlargeButton.Size = New System.Drawing.Size(75, 23)
-        Me.EnlargeButton.TabIndex = 6
-        Me.EnlargeButton.Text = "Enlarge"
-        Me.EnlargeButton.UseVisualStyleBackColor = True
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.StopwatchToolStripMenuItem, Me.HelpToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(413, 24)
+        Me.MenuStrip1.TabIndex = 6
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'FileToolStripMenuItem
+        '
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExitToolStripMenuItem})
+        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.FileToolStripMenuItem.Text = "File"
+        '
+        'ExitToolStripMenuItem
+        '
+        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem.Text = "Exit"
+        '
+        'StopwatchToolStripMenuItem
+        '
+        Me.StopwatchToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StartToolStripMenuItem, Me.StopToolStripMenuItem, Me.LapToolStripMenuItem, Me.ResetToolStripMenuItem})
+        Me.StopwatchToolStripMenuItem.Name = "StopwatchToolStripMenuItem"
+        Me.StopwatchToolStripMenuItem.Size = New System.Drawing.Size(75, 20)
+        Me.StopwatchToolStripMenuItem.Text = "Stopwatch"
+        '
+        'HelpToolStripMenuItem
+        '
+        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem})
+        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
+        Me.HelpToolStripMenuItem.Text = "Help"
+        '
+        'AboutToolStripMenuItem
+        '
+        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AboutToolStripMenuItem.Text = "About"
+        '
+        'StartToolStripMenuItem
+        '
+        Me.StartToolStripMenuItem.Name = "StartToolStripMenuItem"
+        Me.StartToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.StartToolStripMenuItem.Text = "Start"
+        '
+        'StopToolStripMenuItem
+        '
+        Me.StopToolStripMenuItem.Name = "StopToolStripMenuItem"
+        Me.StopToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.StopToolStripMenuItem.Text = "Stop"
+        '
+        'LapToolStripMenuItem
+        '
+        Me.LapToolStripMenuItem.Name = "LapToolStripMenuItem"
+        Me.LapToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.LapToolStripMenuItem.Text = "Lap"
+        '
+        'ResetToolStripMenuItem
+        '
+        Me.ResetToolStripMenuItem.Name = "ResetToolStripMenuItem"
+        Me.ResetToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ResetToolStripMenuItem.Text = "Reset"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(199, 34)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(33, 13)
+        Me.Label2.TabIndex = 7
+        Me.Label2.Text = "Laps:"
         '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(236, 299)
-        Me.Controls.Add(Me.EnlargeButton)
+        Me.ClientSize = New System.Drawing.Size(413, 249)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.LapButton)
         Me.Controls.Add(Me.ResetButton)
         Me.Controls.Add(Me.StartButton)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.MaximizeBox = False
         Me.Name = "Main"
         Me.Text = "Simple Stopwatch"
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -116,5 +197,15 @@ Partial Class Main
     Friend WithEvents Label1 As Label
     Friend WithEvents Timer1 As Timer
     Friend WithEvents ListBox1 As ListBox
-    Friend WithEvents EnlargeButton As Button
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents StopwatchToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents StartToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents StopToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents LapToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ResetToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Label2 As Label
 End Class
