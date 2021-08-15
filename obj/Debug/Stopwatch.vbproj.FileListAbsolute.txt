@@ -24,10 +24,10 @@ J:\Documents\Git\Simple-Stopwatch\bin\Debug\Stopwatch.exe
 J:\Documents\Git\Simple-Stopwatch\bin\Debug\Stopwatch.pdb
 J:\Documents\Git\Simple-Stopwatch\bin\Debug\Stopwatch.xml
 J:\Documents\Git\Simple-Stopwatch\obj\Debug\Stopwatch.vbprojResolveAssemblyReference.cache
-J:\Documents\Git\Simple-Stopwatch\obj\Debug\Stopwatch.Enlarged.resources
 J:\Documents\Git\Simple-Stopwatch\obj\Debug\Stopwatch.Main.resources
 J:\Documents\Git\Simple-Stopwatch\obj\Debug\Stopwatch.Resources.resources
 J:\Documents\Git\Simple-Stopwatch\obj\Debug\Stopwatch.vbproj.GenerateResource.Cache
 J:\Documents\Git\Simple-Stopwatch\obj\Debug\Stopwatch.exe
 J:\Documents\Git\Simple-Stopwatch\obj\Debug\Stopwatch.xml
 J:\Documents\Git\Simple-Stopwatch\obj\Debug\Stopwatch.pdb
+J:\Documents\Git\Simple-Stopwatch\obj\Debug\Stopwatch.About.resources

@@ -23,6 +23,7 @@ Partial Class Main
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
         Me.StartButton = New System.Windows.Forms.Button()
         Me.ResetButton = New System.Windows.Forms.Button()
         Me.LapButton = New System.Windows.Forms.Button()
@@ -33,27 +34,30 @@ Partial Class Main
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StopwatchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StartToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.StopToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LapToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ResetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'StartButton
         '
-        Me.StartButton.Location = New System.Drawing.Point(25, 159)
+        Me.StartButton.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.StartButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StartButton.Location = New System.Drawing.Point(25, 146)
         Me.StartButton.Name = "StartButton"
-        Me.StartButton.Size = New System.Drawing.Size(156, 23)
+        Me.StartButton.Size = New System.Drawing.Size(156, 36)
         Me.StartButton.TabIndex = 0
         Me.StartButton.Text = "Start"
         Me.StartButton.UseVisualStyleBackColor = True
         '
         'ResetButton
         '
+        Me.ResetButton.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.ResetButton.Location = New System.Drawing.Point(106, 188)
         Me.ResetButton.Name = "ResetButton"
         Me.ResetButton.Size = New System.Drawing.Size(75, 23)
@@ -63,10 +67,11 @@ Partial Class Main
         '
         'LapButton
         '
+        Me.LapButton.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.LapButton.Location = New System.Drawing.Point(25, 188)
         Me.LapButton.Name = "LapButton"
         Me.LapButton.Size = New System.Drawing.Size(75, 23)
-        Me.LapButton.TabIndex = 3
+        Me.LapButton.TabIndex = 1
         Me.LapButton.Text = "Lap"
         Me.LapButton.UseVisualStyleBackColor = True
         '
@@ -90,13 +95,14 @@ Partial Class Main
         Me.ListBox1.Location = New System.Drawing.Point(202, 50)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(199, 186)
-        Me.ListBox1.TabIndex = 5
+        Me.ListBox1.TabIndex = 3
         '
         'MenuStrip1
         '
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.StopwatchToolStripMenuItem, Me.HelpToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
         Me.MenuStrip1.Size = New System.Drawing.Size(413, 24)
         Me.MenuStrip1.TabIndex = 6
         Me.MenuStrip1.Text = "MenuStrip1"
@@ -111,40 +117,22 @@ Partial Class Main
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        Me.ExitToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.F4), System.Windows.Forms.Keys)
         Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'StopwatchToolStripMenuItem
         '
-        Me.StopwatchToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StartToolStripMenuItem, Me.StopToolStripMenuItem, Me.LapToolStripMenuItem, Me.ResetToolStripMenuItem})
+        Me.StopwatchToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StartToolStripMenuItem, Me.ResetToolStripMenuItem, Me.ToolStripSeparator1, Me.LapToolStripMenuItem})
         Me.StopwatchToolStripMenuItem.Name = "StopwatchToolStripMenuItem"
         Me.StopwatchToolStripMenuItem.Size = New System.Drawing.Size(75, 20)
         Me.StopwatchToolStripMenuItem.Text = "Stopwatch"
-        '
-        'HelpToolStripMenuItem
-        '
-        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem})
-        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
-        Me.HelpToolStripMenuItem.Text = "Help"
-        '
-        'AboutToolStripMenuItem
-        '
-        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.AboutToolStripMenuItem.Text = "About"
         '
         'StartToolStripMenuItem
         '
         Me.StartToolStripMenuItem.Name = "StartToolStripMenuItem"
         Me.StartToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.StartToolStripMenuItem.Text = "Start"
-        '
-        'StopToolStripMenuItem
-        '
-        Me.StopToolStripMenuItem.Name = "StopToolStripMenuItem"
-        Me.StopToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.StopToolStripMenuItem.Text = "Stop"
         '
         'LapToolStripMenuItem
         '
@@ -158,6 +146,20 @@ Partial Class Main
         Me.ResetToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ResetToolStripMenuItem.Text = "Reset"
         '
+        'HelpToolStripMenuItem
+        '
+        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem})
+        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
+        Me.HelpToolStripMenuItem.Text = "Help"
+        '
+        'AboutToolStripMenuItem
+        '
+        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
+        Me.AboutToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AboutToolStripMenuItem.Text = "About"
+        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -166,6 +168,11 @@ Partial Class Main
         Me.Label2.Size = New System.Drawing.Size(33, 13)
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "Laps:"
+        '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
         '
         'Main
         '
@@ -180,6 +187,7 @@ Partial Class Main
         Me.Controls.Add(Me.StartButton)
         Me.Controls.Add(Me.MenuStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.MaximizeBox = False
         Me.Name = "Main"
@@ -202,10 +210,10 @@ Partial Class Main
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents StopwatchToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents StartToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents StopToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents LapToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ResetToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Label2 As Label
+    Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
 End Class
