@@ -9,10 +9,10 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("Simple Stopwatch")>
-<Assembly: AssemblyDescription("A simple stopwatch with lapping and enlargement features.")>
+<Assembly: AssemblyDescription("A simple stopwatch with lapping feature.")>
 <Assembly: AssemblyCompany("WindowsLogic Productions")>
 <Assembly: AssemblyProduct("Simple Stopwatch")>
-<Assembly: AssemblyCopyright("Copyright © 2019 WindowsLogic Productions. All rights reserved.")>
+<Assembly: AssemblyCopyright("Copyright © 2019 - 2022 WindowsLogic Productions. All rights reserved.")>
 <Assembly: AssemblyTrademark("Simple Stopwatch")>
 
 <Assembly: ComVisible(False)>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("1.0.0.0")>
-<Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly: AssemblyVersion("1.1.0.0")>
+<Assembly: AssemblyFileVersion("1.1.0.0")>

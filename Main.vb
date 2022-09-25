@@ -57,4 +57,8 @@
     Private Sub LapToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LapToolStripMenuItem.Click
         ListBox1.Items.Add(Label1.Text)
     End Sub
+
+    Private Sub CheckForUpdatesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CheckForUpdatesToolStripMenuItem.Click
+        Process.Start("https://github.com/windowslogic/Simple-Stopwatch/releases")
+    End Sub
 End Class

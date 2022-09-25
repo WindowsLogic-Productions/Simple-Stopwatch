@@ -37,7 +37,7 @@ Partial Class About
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(92, 26)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Simple Stopwatch" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Version: 1.0"
+        Me.Label1.Text = "Simple Stopwatch" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Version: 1.1"
         '
         'PictureBox1
         '

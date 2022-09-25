@@ -35,12 +35,14 @@ Partial Class Main
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StopwatchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StartToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LapToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ResetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.LapToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.CheckForUpdatesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -118,7 +120,7 @@ Partial Class Main
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
         Me.ExitToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.F4), System.Windows.Forms.Keys)
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(134, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'StopwatchToolStripMenuItem
@@ -134,21 +136,26 @@ Partial Class Main
         Me.StartToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.StartToolStripMenuItem.Text = "Start"
         '
-        'LapToolStripMenuItem
-        '
-        Me.LapToolStripMenuItem.Name = "LapToolStripMenuItem"
-        Me.LapToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.LapToolStripMenuItem.Text = "Lap"
-        '
         'ResetToolStripMenuItem
         '
         Me.ResetToolStripMenuItem.Name = "ResetToolStripMenuItem"
         Me.ResetToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ResetToolStripMenuItem.Text = "Reset"
         '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
+        '
+        'LapToolStripMenuItem
+        '
+        Me.LapToolStripMenuItem.Name = "LapToolStripMenuItem"
+        Me.LapToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.LapToolStripMenuItem.Text = "Lap"
+        '
         'HelpToolStripMenuItem
         '
-        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem})
+        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CheckForUpdatesToolStripMenuItem, Me.ToolStripSeparator2, Me.AboutToolStripMenuItem})
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
         Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
         Me.HelpToolStripMenuItem.Text = "Help"
@@ -157,7 +164,7 @@ Partial Class Main
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
         Me.AboutToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(179, 22)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'Label2
@@ -169,10 +176,16 @@ Partial Class Main
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "Laps:"
         '
-        'ToolStripSeparator1
+        'CheckForUpdatesToolStripMenuItem
         '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
+        Me.CheckForUpdatesToolStripMenuItem.Name = "CheckForUpdatesToolStripMenuItem"
+        Me.CheckForUpdatesToolStripMenuItem.Size = New System.Drawing.Size(179, 22)
+        Me.CheckForUpdatesToolStripMenuItem.Text = "Check for updates..."
+        '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(176, 6)
         '
         'Main
         '
@@ -216,4 +229,6 @@ Partial Class Main
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Label2 As Label
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
+    Friend WithEvents CheckForUpdatesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
 End Class
