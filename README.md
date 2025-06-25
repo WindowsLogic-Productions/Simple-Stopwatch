@@ -7,12 +7,11 @@ The goal is to create a functional stopwatch which is feature-rich and lightweig
 
 Download the latest version of Simple Stopwatch on the [Releases](https://github.com/windowslogic/simple-stopwatch/releases) page.
 
+# Compile it yourself
+
+To compile this project, you need Visual Studio 2017 with .NET Desktop Development installed.
+
 # Support & Feedback
 
 Use the issues tab on this GitHub page to notify me of bugs and such. All support will be handled through here.
 
-# Copyright
-All code is Copyright © 2019 - 2021 WindowsLogic Productions.
-
-# Donate
-Share the love and <a href="https://www.paypal.com/donate?hosted_button_id=8TE9GD6PAGB8Q"><img width="20" height=auto alt="Donate" src="https://windowslogic.co.uk/img/donate.png"> Donate</a> towards my projects.
