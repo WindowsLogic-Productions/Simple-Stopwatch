@@ -1,0 +1,10 @@
+J:\Projects\Simple-Stopwatch\Simple Stopwatch\obj\Debug\Simple Stopwatch.csprojAssemblyReference.cache
+J:\Projects\Simple-Stopwatch\Simple Stopwatch\obj\Debug\Simple_Stopwatch.About.resources
+J:\Projects\Simple-Stopwatch\Simple Stopwatch\obj\Debug\Simple_Stopwatch.Main.resources
+J:\Projects\Simple-Stopwatch\Simple Stopwatch\obj\Debug\Simple_Stopwatch.Properties.Resources.resources
+J:\Projects\Simple-Stopwatch\Simple Stopwatch\obj\Debug\Simple Stopwatch.csproj.GenerateResource.cache
+J:\Projects\Simple-Stopwatch\Simple Stopwatch\obj\Debug\Simple Stopwatch.csproj.CoreCompileInputs.cache
+J:\Projects\Simple-Stopwatch\Simple Stopwatch\bin\Debug\Simple Stopwatch.exe
+J:\Projects\Simple-Stopwatch\Simple Stopwatch\bin\Debug\Simple Stopwatch.pdb
+J:\Projects\Simple-Stopwatch\Simple Stopwatch\obj\Debug\Simple Stopwatch.exe
+J:\Projects\Simple-Stopwatch\Simple Stopwatch\obj\Debug\Simple Stopwatch.pdb

@@ -98,6 +98,7 @@
             this.StartToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.S)));
             this.StartToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.StartToolStripMenuItem.Text = "Start";
+            this.StartToolStripMenuItem.Click += new System.EventHandler(this.StartToolStripMenuItem_Click);
             // 
             // ResetToolStripMenuItem
             // 
@@ -105,6 +106,7 @@
             this.ResetToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.R)));
             this.ResetToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ResetToolStripMenuItem.Text = "Reset";
+            this.ResetToolStripMenuItem.Click += new System.EventHandler(this.ResetToolStripMenuItem_Click);
             // 
             // ToolStripSeparator1
             // 
@@ -117,6 +119,7 @@
             this.LapToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.L)));
             this.LapToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.LapToolStripMenuItem.Text = "Lap";
+            this.LapToolStripMenuItem.Click += new System.EventHandler(this.LapToolStripMenuItem_Click);
             // 
             // HelpToolStripMenuItem
             // 
@@ -135,6 +138,7 @@
             | System.Windows.Forms.Keys.C)));
             this.CheckForUpdatesToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
             this.CheckForUpdatesToolStripMenuItem.Text = "Check for updates...";
+            this.CheckForUpdatesToolStripMenuItem.Click += new System.EventHandler(this.CheckForUpdatesToolStripMenuItem_Click);
             // 
             // ToolStripSeparator2
             // 
@@ -147,6 +151,7 @@
             this.AboutToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
             this.AboutToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
             this.AboutToolStripMenuItem.Text = "About";
+            this.AboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
             // Label2
             // 
@@ -230,7 +235,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Main";
-            this.Text = "Simple Stopwatch";
+            this.Text = " Simple Stopwatch";
             this.MenuStrip1.ResumeLayout(false);
             this.MenuStrip1.PerformLayout();
             this.ResumeLayout(false);

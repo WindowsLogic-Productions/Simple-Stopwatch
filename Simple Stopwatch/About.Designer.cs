@@ -41,7 +41,7 @@
             this.Button1.Location = new System.Drawing.Point(74, 69);
             this.Button1.Name = "Button1";
             this.Button1.Size = new System.Drawing.Size(75, 23);
-            this.Button1.TabIndex = 1;
+            this.Button1.TabIndex = 0;
             this.Button1.Text = "OK";
             this.Button1.UseVisualStyleBackColor = true;
             this.Button1.Click += new System.EventHandler(this.Button1_Click);
@@ -52,9 +52,10 @@
             this.LinkLabel1.Location = new System.Drawing.Point(50, 38);
             this.LinkLabel1.Name = "LinkLabel1";
             this.LinkLabel1.Size = new System.Drawing.Size(55, 13);
-            this.LinkLabel1.TabIndex = 0;
+            this.LinkLabel1.TabIndex = 1;
             this.LinkLabel1.TabStop = true;
             this.LinkLabel1.Text = "Contribute";
+            this.LinkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel1_LinkClicked);
             // 
             // PictureBox1
             // 
