@@ -184,6 +184,7 @@
             this.LapButton.TabIndex = 9;
             this.LapButton.Text = "Lap";
             this.LapButton.UseVisualStyleBackColor = true;
+            this.LapButton.Click += new System.EventHandler(this.LapButton_Click);
             // 
             // ResetButton
             // 
@@ -194,6 +195,7 @@
             this.ResetButton.TabIndex = 10;
             this.ResetButton.Text = "Reset";
             this.ResetButton.UseVisualStyleBackColor = true;
+            this.ResetButton.Click += new System.EventHandler(this.ResetButton_Click);
             // 
             // StartButton
             // 
@@ -205,10 +207,12 @@
             this.StartButton.TabIndex = 8;
             this.StartButton.Text = "Start";
             this.StartButton.UseVisualStyleBackColor = true;
+            this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
             // 
             // Timer1
             // 
             this.Timer1.Interval = 1;
+            this.Timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
             // Main
             // 
